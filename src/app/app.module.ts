@@ -9,7 +9,6 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { MaincontentComponent } from './maincontent/maincontent.component';
 import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
-import { SearchComponent } from './search/search.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 
@@ -20,7 +19,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     RecipeComponent,
     MaincontentComponent,
     CardComponent,
-    SearchComponent,
+
     SidebarComponent,
 
   ],

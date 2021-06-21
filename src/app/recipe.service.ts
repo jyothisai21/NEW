@@ -14,6 +14,6 @@ export class RecipeService {
 
  
   getRecipeByName(id:string){
-    return this.http.get(`https://api.edamam.com/search?app_id=5cb53c5e&app_key=a7fd21177e9ff88e218ea0170b83a293&q=http%3A%2F%2Fwww.edamam.com%2Fontologies%2Fedamam.owl%23${id}`);
+    return this.http.get(`https://api.edamam.com/search?app_id=5cb53c5e&app_key=a7fd21177e9ff88e218ea0170b83a293&r=http%3A%2F%2Fwww.edamam.com%2Fontologies%2Fedamam.owl%23${id}`);
   }
   }

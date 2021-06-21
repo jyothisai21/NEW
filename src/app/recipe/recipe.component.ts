@@ -8,17 +8,19 @@ import {RecipeService} from '../recipe.service';
 })
 export class RecipeComponent implements OnInit {
 
-  id1: "";
+  id1: any;
   data: any;
   constructor(private router:Router,private recipe:RecipeService, private route: ActivatedRoute) {
-    this.id1=this.route.snapshot.params.id;
+    this.id1=this.route.snapshot.paramMap.get("id");
+    
    }
 
   ngOnInit(): void {
     this.recipe.getRecipeByName(this.id1).subscribe((res:any)=>{
-      this.data=res.hits[0];
+      
+      this.data=res;
+      console.log("food" +this.data)
     })
   }
-
 
 }
